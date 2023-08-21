@@ -6,11 +6,12 @@ Para el desarrollo de este proyecto se tiene como base el desarrollo de una apli
 <br />
 
 ### Indice
-1. [Despliegue en OpenShift desde IBM Cloud shell](#Despliegue-en-OpenShift-desde-IBM-Cloud-shell-)
-2. [Despliegue Aplicación Demo en React](#despliegue-aplicación-demo-en-react-⚛️)
-3. [Despliegue Aplicación Feedback App Desde la consola web de OpenShift](#despliegue-aplicación-feedback-app-desde-la-consola-web-de-openshift-📦)
-4. [Despliegue de una imagen Docker en un contenedor de Openshift](#Despliegue-de-una-imagen-Docker-en-un-contenedor-de-Openshift-)
-5. [Referencias](#Referencias)
+1. [Despliegue en OpenShift desde IBM Cloud shell](#despliegue-en-OpenShift-desde-IBM-Cloud-shell-)
+3. [Despliegue Aplicación Demo en React](#despliegue-aplicación-demo-en-react-⚛️)
+4. [Despliegue Aplicación Feedback App Desde la consola web de OpenShift](#despliegue-aplicación-feedback-app-desde-la-consola-web-de-openshift-📦)
+5. [Monitoreo de la Aplicación](#monitoreo-de-la-aplicación)
+6. [Despliegue de una imagen Docker en un contenedor de Openshift](#Despliegue-de-una-imagen-Docker-en-un-contenedor-de-Openshift-)
+7. [Referencias](#Referencias)
 <!-- 4. [Monitoreo de la aplicación](#monitoreo-de-la-aplicación) -->
 <br />
 
@@ -243,6 +244,33 @@ Para realizar un monitoreo de la aplicación desplegada debe seguir los pasos qu
 De esta manera podemos analizar el consumo que se ha tenido en nuestra aplicación tanto en CPU como en Memoria.
 
 <br /> -->
+
+## Monitoreo de la aplicación
+
+Para realizar monitoreo de la aplicación desplegada debe seguir los pasos que se indican a continuación:
+
+1. Hacer click en la sección **Observe**
+2. Hacer click en la pestaña del proyecto (parte superior), allí busque y seleccione el proyecto donde desplegó la aplicación, el que tenía la sintaxis **handson-nombreapellido**.
+   
+![image](https://github.com/emeloibmco/ROKS-React---HandsOn-4.9/assets/51938754/2be06a78-4940-4e56-884d-cbe72d0a9bbc)
+
+4. En la sección **Dashboard** puede seleccionar las siguientes opciones.
+
+<p align="center">
+<img width="760" alt="cpu" src="https://github.com/emeloibmco/ROKS-React---HandsOn-4.9/assets/51938754/9e742350-038b-45dd-aef4-b8b751fdeafc">
+</p>
+
+5. También puede seleccionar la sección **Metrics** y seleccionar alguno de los siguientes query.
+
+<p align="center">
+<img width="760" alt="cpu" src="https://github.com/emeloibmco/ROKS-React---HandsOn-4.9/assets/51938754/1261e803-1d3d-4109-88aa-9894ddbb64a4">
+</p>
+
+<p align="center">
+<img width="760" alt="cpu" src="https://github.com/emeloibmco/ROKS-React---HandsOn-4.9/assets/51938754/f7fd0d69-06c2-4cf8-b5e8-cc378a285b92">
+</p>
+
+De estas dos maneras puede ver y analizar el consumo que ha tenido la aplicación en cuanto a CPU y memoria. 
 
 ## Despliegue de una imagen Docker en un contenedor de Openshift 📦
 
